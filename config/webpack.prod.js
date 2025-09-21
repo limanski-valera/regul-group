@@ -39,8 +39,8 @@ if (!pugPages.length) {
 			'indent_size': 3
 		},
 		replace: [
-			{ regex: '../img', to: 'img' },
-			{ regex: '@img', to: 'img' },
+			{ regex: '../img', to: './img' },
+			{ regex: '@img', to: './img' },
 			htmlImagesWebpLoader,
 			{ regex: 'NEW_PROJECT_NAME', to: rootFolder }
 		],
@@ -115,7 +115,7 @@ const config = {
 						loader: 'string-replace-loader',
 						options: {
 							search: '@img',
-							replace: 'img',
+							replace: './img',
 							flags: 'g'
 						}
 					}
