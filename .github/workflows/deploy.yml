@@ -22,7 +22,7 @@ jobs:
 
       # Ставим зависимости
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm install
 
       # Билдим проект
       - name: Build
