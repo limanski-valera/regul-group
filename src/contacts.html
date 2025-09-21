@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Головна" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page--contacts">
+				<section class="contacts-section">
+					<div class="contacts-section__container">
+						<h1 class="contacts-section__title title">Контакти</h1>
+						<div class="contacts-section__blocks">
+							<div class="contact-block">
+								<h3 class="contact-block__title">Подзвонити</h3>
+								<div class="contact-block__body">
+									<div class="contact-block__row">
+										<div class="contact-block__label">Амортизатори</div>
+										<a href="tel:0997010063" class="contact-block__link">+38 (099) 701-00-63</a>
+									</div>
+									<div class="contact-block__row">
+										<div class="contact-block__label">С/г запчастини</div>
+										<a href="tel:0997010063" class="contact-block__link">+38 (093) 360-99-70</a>
+									</div>
+									<div class="contact-block__row">
+										<div class="contact-block__label">Послуги</div>
+										<a href="tel:0997010063" class="contact-block__link">+38 (097) 899-45-51</a>
+									</div>
+									<div class="contact-block__row">
+										<div class="contact-block__label">Директор</div>
+										<a href="tel:0997010063" class="contact-block__link">+38 (095) 888-87-77</a>
+									</div>
+								</div>
+							</div>
+							<div class="contact-block">
+								<h3 class="contact-block__title">Написати</h3>
+								<div class="contact-block__body">
+									<div class="contact-block__row">
+										<div class="contact-block__label">Амортизатори</div>
+										<a href="mailto:technoamort@gmail.com" class="contact-block__link">technoamort@gmail.com</a>
+									</div>
+									<div class="contact-block__row">
+										<div class="contact-block__label">Інші питання</div>
+										<a href="mailto:technoamort@gmail.com" class="contact-block__link">regulgrupbuh@gmail.com</a>
+									</div>
+								</div>
+							</div>
+							<div class="contact-block">
+								<h3 class="contact-block__title">Адреса</h3>
+								<div class="contact-block__body">
+									<div class="contact-block__row">
+										<div class="contact-block__label">Виробництво</div>
+										<a href="https://maps.app.goo.gl/oz6EuUDLzA77numX9" target="_blank" class="contact-block__link">м. Дніпро, вул. Злуки 2</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.3349798830627!2d35.1096298!3d48.506875300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d9583f3663f0a3%3A0xf9a95bb6239a64a6!2z0YPQuy4g0KHQvtC10LTQuNC90LXQvdC40Y8sIDIsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e1!3m2!1sru!2sua!4v1758271520035!5m2!1sru!2sua"
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</main>
+			@@include('html/_bid-section.htm',{}) @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

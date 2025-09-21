@@ -1,0 +1,73 @@
+//<FORM>
+// Сніппет (HTML):
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	&__row {
+		&:has([required]) .form__label::after {
+			content: '*';
+			color: var(--primary);
+			padding-left: 5px;
+		}
+	}
+	&__column {
+	}
+	&__line {
+	}
+	&__label {
+		font-weight: 500;
+		margin-bottom: 7px;
+	}
+	&__input {
+	}
+	&__button {
+	}
+	&__message {
+		text-align: center;
+		color: var(--primary);
+		font-weight: 500;
+		font-size: 16px;
+	}
+	&__error {
+		color: var(--error);
+	}
+}
+
+//</FORM>
+
+// <BUTTONS>
+// Сніппет (HTML): btn
+@import 'button';
+
+// <INPUTS>
+// Сніппет (HTML): inp
+@import 'input';
+
+// <CHECK>
+// Сніппет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Сніппет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Сніппет (HTML): sel
+@import 'select';
+
+// <RATING>
+// Сніппет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Сніппет (HTML): qa
+// @import "quantity";
+
+// <RANGE>
+// Сніппет (HTML):
+// @import "range";
+
+// <CALENDAR>
+// Сніппет (HTML):
+// @import "datepicker";

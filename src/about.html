@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	@@include('html/_head.htm',{ "title":"Головна" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page page--about">
+				<section class="about-section">
+					<div class="about-section__container">
+						<div class="about-section__content">
+							<h1 class="about-section__title title">Трохи <span class="primary">про нас</span></h1>
+							<div class="about-section__text">
+								<p>
+									Український виробник амортизаторів до різних видів автомобільної техніки, гідроциліндрів, запчастин для сельхозтехніки — вітчизняної та іноземної. Працюємо для автотранспортних і с/г
+									підприємств та приватних замовників.
+								</p>
+								<p>Компанія молода (2024), але ядро команди — фахівці амортизаторного виробництва з Мелітополя. Через російську агресію виробництво тимчасово переміщено до Дніпра.</p>
+								<p>З нами працює головний конструктор‑технолог того підприємства — це наш досвід, напрацьовані технології й впевненість у результаті.</p>
+							</div>
+						</div>
+						<div class="about-section__image-wrapper">
+							<figure class="about-section__figure">
+								<img src="@img/content/04.JPG" alt="" width="535" height="368" />
+							</figure>
+						</div>
+					</div>
+				</section>
+
+				<section class="quality">
+					<div class="quality__container">
+						<h2 class="quality__title title">Якість та контроль</h2>
+						<ul class="quality__list">
+							<li class="quality__item">
+								<h3 class="quality__label">Матеріали</h3>
+								<div class="quality__body">порошкове фарбування + імпортні комплектуючі.</div>
+							</li>
+							<li class="quality__item">
+								<h3 class="quality__label">Конструкція</h3>
+								<div class="quality__body">
+									подвійне ущільнення; <br />
+									амортизатори розбірні — придатні до сервісу/ремонту.
+								</div>
+							</li>
+							<li class="quality__item">
+								<h3 class="quality__label">Тестування</h3>
+								<div class="quality__body">випробувальні стенди - перевірка робочих характеристик кожного виробу.</div>
+							</li>
+							<li class="quality__item">
+								<h3 class="quality__label">Пакування</h3>
+								<div class="quality__body">індивідуальна коробка із сучасним дизайном і повною інформацією.</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="cert">
+					<div class="cert__container">
+						<h2 class="cert__title title">Сертифікати</h2>
+						<div class="cert__list">
+							<div class="cert__item">
+								<h3 class="cert__label">система менеджменту якості</h3>
+								<div class="cert__name">ISO 9001:2015</div>
+								<img src="@img/content/ISO_9001-2015.jpg" alt="Сертифікат якості ISO 9001:2015" width="375" height="535" />
+							</div>
+							<div class="cert__item">
+								<h3 class="cert__label">система екологічного управління</h3>
+								<div class="cert__name">ISO 14001:2015</div>
+								<img src="@img/content/ISO_14001-2015.jpg" alt="Сертифікат якості ISO 14001:2015" width="375" height="535" />
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_bid-section.htm',{}) @@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

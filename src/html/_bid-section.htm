@@ -1,0 +1,38 @@
+<section id="bid" class="bid">
+	<div class="bid__container">
+		<div class="bid__content">
+			<h2 class="bid__title title">Залиште заявку</h2>
+			<div class="bid__text">
+				<p>Наші менеджери звʼяжуться з вами у найкоротший термін</p>
+			</div>
+			<form action="#" data-ajax data-dev method="POST" class="bid__form form">
+				<div class="form__row">
+					<label for="name" class="form__label">Імʼя</label>
+					<input id="name" type="text" name="name" class="form__input input" placeholder="Тарас" required />
+				</div>
+				<div class="form__row">
+					<label for="telephone" class="form__label">Номер телефону</label>
+					<input id="telephone" type="text" name="telephone" class="form__input input" placeholder="+38 (068) 999-99-99" required data-inputmask="'mask': '+38 (999) 999-99-99'" />
+				</div>
+				<div class="form__row">
+					<label class="form__label">Що вас цікавить?</label>
+					<select name="category" data-class-modif="form" required>
+						<option value="Амортизатори" selected>Амортизатори</option>
+						<option value="Лазерна різка">Лазерна різка</option>
+					</select>
+				</div>
+				<div class="form__row">
+					<label for="comment" class="form__label">Ваш коментар</label>
+					<textarea name="comment" id="comment" placeholder="Хочу замовити велику партію..." class="form__input input"></textarea>
+				</div>
+				<button type="submit" class="form__button button">Відправити</button>
+				<!--<div class="form__message form__error">Не вийшло відправити заявку</div>-->
+			</form>
+		</div>
+		<div class="bid__image-wrapper">
+			<figure class="bid__figure">
+				<img src="@img/content/03.JPG" alt="" width="535" height="571" />
+			</figure>
+		</div>
+	</div>
+</section>

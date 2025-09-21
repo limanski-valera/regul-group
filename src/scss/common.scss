@@ -1,0 +1,191 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.page {
+	&--home {
+		padding-top: 150px;
+	}
+	&--contacts {
+		padding-top: 200px;
+
+		@media (max-width: $tablet) {
+			padding-top: 170px;
+		}
+
+		@media (max-width: $mobile) {
+			padding-top: 130px;
+		}
+	}
+	&--about {
+		padding-top: 150px;
+	}
+	&--services {
+		padding-top: 200px;
+
+		@media (max-width: $tablet) {
+			padding-top: 170px;
+		}
+
+		@media (max-width: $mobile) {
+			padding-top: 130px;
+		}
+	}
+	&--single {
+		padding-top: 150px;
+
+		@media (max-width: $tablet) {
+			padding-top: 130px;
+		}
+
+		@media (max-width: $mobile) {
+			padding-top: 120px;
+		}
+	}
+}
+
+.results {
+	padding: 50px 0;
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px;
+
+		@media (max-width: $mobile) {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			align-items: center;
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		text-align: center;
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+		}
+	}
+	&__icon {
+		width: 50px;
+		height: 50px;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	&__value {
+		font-weight: 700;
+		font-size: 28px;
+	}
+	&__label {
+		font-weight: 500;
+	}
+}
+
+.primary {
+	color: var(--primary);
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.link {
+	color: var(--secondary);
+
+	@media (any-hover: hover) {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.app-call {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--accent);
+	transition: background-color 0.2s;
+	z-index: 100;
+
+	&::before,
+	&::after {
+		content: '';
+		pointer-events: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		background-color: var(--primary);
+		z-index: -1;
+		border-radius: 50%;
+		opacity: 0;
+	}
+
+	&::before {
+		animation: appCallRipple1 2s infinite ease-in;
+	}
+
+	&::after {
+		animation: appCallRipple2 2s 1s infinite ease-in;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--primary);
+		}
+	}
+
+	&__icon {
+		animation: appCallIcon 2s infinite ease-in;
+	}
+}
+
+@keyframes appCallIcon {
+	0% {
+		transform: rotate(0);
+	}
+	80% {
+		transform: rotate(15deg);
+	}
+	90% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+@keyframes appCallRipple1 {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 0.2;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(2);
+		opacity: 0;
+	}
+}
+
+@keyframes appCallRipple2 {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 0.2;
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(2.5);
+		opacity: 0;
+	}
+}
