@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write # 👈 даёт github-actions[bot] право пушить в gh-pages
+
 jobs:
   build:
     runs-on: ubuntu-latest
