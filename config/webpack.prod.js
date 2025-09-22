@@ -17,13 +17,13 @@ let cssImagesWebpLoader, htmlImagesWebpLoader;
 cssImagesWebpLoader = {
 	loader: 'string-replace-loader',
 	options: {
-		search: '\\.(png|jpeg|jpg|gif)(?=\\s|\\)|"|\'|$)',
+		search: '\\.(png|jpeg|jpg|gif,JPG,JPEG)(?=\\s|\\)|"|\'|$)',
 		replace: '.webp',
 		flags: 'ig'
 	}
 }
 htmlImagesWebpLoader = {
-	regex: '\\.(png|jpeg|jpg|gif)(?=\\s|\\)|"|\'|$)',
+	regex: '\\.(png|jpeg|jpg|gif,JPG,JPEG)(?=\\s|\\)|"|\'|$)',
 	to: '.webp'
 }
 
